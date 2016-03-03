@@ -90,7 +90,7 @@ module.exports = (robot) ->
        res.reply "DOES NOT COMPUTE"
 
    robot.respond /have a soda/i, (res) ->
-      Get number of sodas had (coerced to a number).
+      #Get number of sodas had (coerced to a number).
      sodasHad = robot.brain.get('totalSodas') * 1 or 0
 
      if sodasHad > 4
