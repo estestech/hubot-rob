@@ -4,5 +4,6 @@
   "hubot-pugme",
   "hubot-rules",
   "hubot-shipit",
-  "hubot-ector"
+  "hubot-ector",
+  "hubot-brain-redis-hash"
 ]

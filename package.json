@@ -6,6 +6,7 @@
   "description": "hopefully it is going to be our smartest robot",
   "dependencies": {
     "hubot": "^2.18.0",
+    "hubot-brain-redis-hash": "^0.1.1",
     "hubot-diagnostics": "0.0.1",
     "hubot-ector": "^1.2.1",
     "hubot-google-images": "^0.2.6",
