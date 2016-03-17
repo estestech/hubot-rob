@@ -26,12 +26,11 @@ module.exports = (robot) ->
        
 #============================================
 
-   robot.respond /Who is Ian Kilgore/i, (res) ->
-      res.send "970-235-1770"
 
 #============================================
 
    robot.respond /Who (.*) Ian (.*)/i, (res) ->
+      res.send "970-235-1770"
       res.send "ianmacduffkilgore@gmail.com"
       
 #============================================
@@ -46,11 +45,6 @@ module.exports = (robot) ->
    robot.respond /lulz/i, (res) ->
      res.send res.random lulz
      
-#============================================
-
-   robot.topic (res) ->
-     res.send "#{res.message.text}? That's a Paddlin'"
-
 #============================================
 
    robot.respond /you are a little slow/, (res) ->
