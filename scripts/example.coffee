@@ -28,6 +28,11 @@ module.exports = (robot) ->
 
    robot.respond /Who is Ian Kilgore/i, (res) ->
       res.send "970-235-1770"
+
+#============================================
+
+   robot.respond /Who (.*) Ian (.*)/i, (res) ->
+      res.send "ianmacduffkilgore@gmail.com"
       
 #============================================
 
