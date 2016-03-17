@@ -30,8 +30,10 @@ module.exports = (robot) ->
 #============================================
 
    robot.respond /Who (.*) Ian (.*)/i, (res) ->
+      res.send "Ian Kilgore"
       res.send "970-235-1770"
       res.send "ianmacduffkilgore@gmail.com"
+      res.send "current location is undisclosable"
       
 #============================================
 
