@@ -22,7 +22,6 @@ module.exports = (robot) ->
 #=============================================================================
     robot.respond /Ian Kilgore/i, (res) ->
     res.send "970-235-1770"
-    res.send "ianmacduffkilgore@gmail.com"
 #=============================================================================
 
    robot.hear /I like pie/i, (res) ->
