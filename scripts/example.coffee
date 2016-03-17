@@ -12,22 +12,27 @@ module.exports = (robot) ->
 
    robot.hear /badger/i, (res) ->
      res.send "Badgers? BADGERS? WE DON'T NEED NO STINKIN BADGERS"
-
+#=============================================================================
    robot.respond /open the (.*) doors/i, (res) ->
      doorType = res.match[1]
      if doorType is "pod bay"
        res.reply "I'm afraid I can't let you do that."
      else
        res.reply "Opening #{doorType} doors"
+#=============================================================================
+    robot.respond /Ian Kilgore/i, (res) ->
+    res.send "970-235-1770"
+    res.send "ianmacduffkilgore@gmail.com"
+#=============================================================================
 
    robot.hear /I like pie/i, (res) ->
      res.emote "makes a freshly baked pie"
-
+#=============================================================================
    lulz = ['lol', 'rofl', 'lmao']
 
    robot.respond /lulz/i, (res) ->
      res.send res.random lulz
-
+#=============================================================================
    robot.topic (res) ->
      res.send "#{res.message.text}? That's a Paddlin'"
 
