@@ -19,6 +19,16 @@ module.exports = (robot) ->
        res.reply "I'm afraid I can't let you do that."
      else
        res.reply "Opening #{doorType} doors"
+       
+       #============================================
+
+   robot.respond /Who (.*) Ian (.*)/i, (res) ->
+      res.send "Ian Kilgore"
+      res.send "970-235-1770"
+      res.send "ianmacduffkilgore@gmail.com"
+      res.send "current location is undisclosable"
+      
+       #============================================
 
    robot.hear /I like pie/i, (res) ->
      res.emote "makes a freshly baked pie"
