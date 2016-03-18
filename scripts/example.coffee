@@ -19,8 +19,14 @@ module.exports = (robot) ->
        res.reply "I'm afraid I can't let you do that."
      else
        res.reply "Opening #{doorType} doors"
-       
-       #============================================
+  
+#============================================
+
+   robot.respond /work (.*) leekilgore (.*)/i, (res) ->
+      res.send '@workbot github list issue repo:"estestech/estestech.github.io" assignee:"LeeKilgore"'
+      res.send '@workbot github list issue repo:"estestech/hubot-rob" assignee:"LeeKilgore"'
+
+#============================================
 
    robot.respond /Who (.*) Ian (.*)/i, (res) ->
       res.send "Ian Kilgore"
