@@ -24,11 +24,8 @@ module.exports = (robot) ->
 
    robot.respond /Who (.*) Ian (.*)/i, (res) ->
       res.send "Ian Kilgore"
-   robot.respond /Who (.*) Ian (.*)/i, (res) ->
       res.send "970-235-1770"
-   robot.respond /Who (.*) Ian (.*)/i, (res) ->
       res.send "ianmacduffkilgore@gmail.com"
-   robot.respond /Who (.*) Ian (.*)/i, (res) ->
       res.send "current location is undisclosable"
       
        #============================================
