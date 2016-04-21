@@ -11,4 +11,4 @@
 module.exports = (robot) ->
 
    robot.hear /steak/i, (res) ->
-     res.send "yum! yum!"
+     res.send "yum!yum!"
