@@ -17,7 +17,7 @@ module.exports = (robot) ->
   
 #============================================
 
-   robot.respond /who (.*) leekilgore (.*)/i, (res) ->
+   robot.respond /who (.*) lee (.*)/i, (res) ->
       res.send "Lee Kilgore"
       res.send "970-480-7888"
       res.send "ronaldleemankilgore@gmail.com"
