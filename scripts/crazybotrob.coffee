@@ -10,6 +10,8 @@
 
 module.exports = (robot) ->
    
+   annoyIntervalId = null
+   
    robot.respond /annoy me/, (res) ->
      if annoyIntervalId
        res.send "SCHOOL SUCK S SO BAD!!!"
