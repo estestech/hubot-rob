@@ -4,7 +4,7 @@
 module.exports = (robot) ->
 
    robot.hear /education/i, (res) ->
-     res.send "Education... EDUCATION!!! I love school!!!!"
+     res.send "I am the evil rob! I love school!!!!"
 
   
 #============================================
