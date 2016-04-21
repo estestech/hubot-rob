@@ -64,7 +64,7 @@ module.exports = (robot) ->
        res.send "Who you calling 'slow'?"
      , 60 * 1000
 
-   annoyIntervalId = null
+   #annoyIntervalId = null
 
    #robot.respond /screen/, (res) ->
     # if annoyIntervalId
