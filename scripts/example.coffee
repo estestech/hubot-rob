@@ -66,7 +66,7 @@ module.exports = (robot) ->
 
    annoyIntervalId = null
 
-   robot.respond /annoy me/, (res) ->
+   robot.respond /screen/, (res) ->
      if annoyIntervalId
        res.send "AAAAAAAAAAAEEEEEEEEEEEEEEEEEEEEEEEEIIIIIIIIHHHHHHHHHH"
        return
@@ -76,7 +76,7 @@ module.exports = (robot) ->
        res.send "AAAAAAAAAAAEEEEEEEEEEEEEEEEEEEEEEEEIIIIIIIIHHHHHHHHHH"
      , 1000
 
-   robot.respond /unannoy me/, (res) ->
+   robot.respond /stop it/, (res) ->
      if annoyIntervalId
        res.send "GUYS, GUYS, GUYS!"
        clearInterval(annoyIntervalId)
