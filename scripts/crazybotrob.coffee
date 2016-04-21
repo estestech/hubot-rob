@@ -1,3 +1,5 @@
+module.exports = (robot) ->
+
 annoyIntervalId = null
 
    robot.respond /annoy me/, (res) ->
