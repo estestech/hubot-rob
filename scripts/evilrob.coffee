@@ -10,7 +10,7 @@ module.exports = (robot) ->
 #============================================
 
    robot.respond /who (.*) rob (.*)/i, (res) ->
-      res.send "badger"
-      res.send "@rob annoy me"
+      res.send "I am the evil rob!"
+      res.send "@tvbot annoy me"
 
 #============================================
