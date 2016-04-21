@@ -10,19 +10,19 @@
 
 module.exports = (robot) ->
    
-   robot.respond /screen/, (res) ->
+   robot.respond /annoy me/, (res) ->
      if annoyIntervalId
-       res.send "AAAAAAAAAAAEEEEEEEEEEEEEEEEEEEEEEEEIIIIIIIIHHHHHHHHHH"
+       res.send "SCHOOL SUCK S SO BAD!!!"
        return
 
-     res.send "Hey, want to hear the most annoying sound in the world?"
+     res.send "Listen all of you that hate school!!!"
      annoyIntervalId = setInterval () ->
-       res.send "AAAAAAAAAAAEEEEEEEEEEEEEEEEEEEEEEEEIIIIIIIIHHHHHHHHHH"
+       res.send "SCHOOL SUCK S SO BAD!!!"
      , 1000
 
    robot.respond /stop it/, (res) ->
      if annoyIntervalId
-       res.send "GUYS, GUYS, GUYS!"
+       res.send "GUYS, GUYS, GUYS! -brief pause- SHEESH, WE JUST HATE SCHOOL..."
        clearInterval(annoyIntervalId)
        annoyIntervalId = null
      else
