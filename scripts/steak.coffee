@@ -14,3 +14,5 @@ module.exports = (robot) ->
      res.send "yum!yum!"
    robot.hear /master chief/i, (res) ->
      res.send "best sparten ever!"
+   robot.hear /who lives in a pineappple under the sea/i, (res) ->
+     res.send "spongbob square pants"
