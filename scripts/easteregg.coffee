@@ -15,3 +15,8 @@ module.exports = (robot) ->
 
   
 #============================================
+
+   robot.hear /dropout/i, (res) ->
+     res.send "Lets dropout!!!"
+
+  
